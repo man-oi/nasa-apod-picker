@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+      // beforeEnter: (to, from, next) => {
+      //   if (localStorage.getItem('username') !== null) {
+      //     next();
+      //   } else next('/login');
+      // },
     },
     {
       path: '/login',
